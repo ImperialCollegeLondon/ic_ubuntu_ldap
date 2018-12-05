@@ -197,14 +197,14 @@ class uldap {
     source => 'puppet:///modules/uldap/krb5.conf',
   }
 
-  file { '/etc/pam.d/nscd.conf':
+  file { '/etc/nscd.conf':
     mode   => '0600',
     owner  => 'root',
     group  => 'root',
     source => 'puppet:///modules/uldap/nscd.conf',
   }
 
-  file { '/etc/profile.d/nsswitch.conf':
+  file { '/etc/nsswitch.conf':
     mode   => '0600',
     owner  => 'root',
     group  => 'root',
