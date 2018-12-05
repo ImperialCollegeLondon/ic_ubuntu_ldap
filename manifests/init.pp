@@ -174,13 +174,13 @@ class uldap {
     group  => 'root',
     source => 'puppet:///modules/uldap/pam.d/vmtoolsd',
   }
-
-  file { '/etc/profile.d/configure-pam-mount.sh':
-    mode   => '0600',
-    owner  => 'root',
-    group  => 'root',
-    source => 'puppet:///modules/uldap/profile.d/configure-pam-mount.sh',
-  }
+  # ICT Homedirs
+  #file { '/etc/profile.d/configure-pam-mount.sh':
+    #mode   => '0600',
+    #owner  => 'root',
+    #group  => 'root',
+    #source => 'puppet:///modules/uldap/profile.d/configure-pam-mount.sh',
+  #}
 
   file { '/etc/ssh/sshd_config':
     mode   => '0600',
