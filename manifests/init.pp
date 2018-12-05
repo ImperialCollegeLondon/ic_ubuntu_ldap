@@ -225,8 +225,8 @@ class uldap {
   }
 
   service { 'nscd':
-    ensure => 'running',
-    enable => true,
+    ensure  => 'running',
+    enable  => true,
     require => Package['nscd']
   }
 
