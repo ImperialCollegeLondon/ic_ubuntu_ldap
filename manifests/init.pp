@@ -190,7 +190,7 @@ class uldap {
   }
 
     file { '/etc/krb5.conf':
-    mode   => '0600',
+    mode   => '0644',
     owner  => 'root',
     group  => 'root',
     source => 'puppet:///modules/uldap/krb5.conf',
