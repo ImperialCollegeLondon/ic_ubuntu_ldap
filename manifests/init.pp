@@ -1,4 +1,4 @@
-class ldap {
+class uldap {
   # Install requirements for LDAP 
   Package {ensure => 'installed',
     #before => Exec['setup LDAP']
