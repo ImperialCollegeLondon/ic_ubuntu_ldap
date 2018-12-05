@@ -218,7 +218,7 @@ class uldap {
   }
 
   file { '/etc/ldap.conf':
-    mode   => '0600',
+    mode   => '0644',
     owner  => 'root',
     group  => 'root',
     source => 'puppet:///modules/uldap/ldap.conf',
