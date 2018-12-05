@@ -211,4 +211,18 @@ class uldap {
     source => 'puppet:///modules/uldap/nsswitch.conf',
   }
 
+  file { '/etc/ldap/ldap.conf':
+    mode   => '0444',
+    owner  => 'root',
+    group  => 'root',
+    source => 'puppet:///modules/uldap/ldap/ldap.conf',
+  }
+
+  file { '/etc/ldap.conf':
+    mode   => '0600',
+    owner  => 'root',
+    group  => 'root',
+    source => 'puppet:///modules/uldap/ldap.conf',
+  }
+
 }
