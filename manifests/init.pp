@@ -1,7 +1,6 @@
 class uldap {
   # Install requirements for LDAP 
   Package {ensure => 'installed',
-    #before => Exec['setup LDAP']
   }
 
   package { 'openssh-server': }
@@ -223,6 +222,12 @@ class uldap {
     owner  => 'root',
     group  => 'root',
     source => 'puppet:///modules/uldap/ldap.conf',
+  }
+
+  service { 'nscd':
+    ensure => 'running',
+    enable => true,
+    require => Package['nscd']
   }
 
 }
