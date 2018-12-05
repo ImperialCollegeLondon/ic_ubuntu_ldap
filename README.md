@@ -1,5 +1,5 @@
 
-# ubuntu_ldap
+# ubuntu_ldap [![Build Status](https://travis-ci.org/ImperialCollegeLondon/ic_ubuntu_ldap.svg?branch=master)](https://travis-ci.org/ImperialCollegeLondon/ic_ubuntu_ldap)
 
 Welcome to your new module. A short overview of the generated parts can be found in the PDK documentation at https://puppet.com/pdk/latest/pdk_generating_modules.html .
 
